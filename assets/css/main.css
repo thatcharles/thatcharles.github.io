@@ -2324,6 +2324,10 @@
 			text-align: center;
 		}
 
+		.box.special p {
+			text-align: left;
+		}
+
 		.box .image.featured {
 			border-radius: 0;
 			display: block;
