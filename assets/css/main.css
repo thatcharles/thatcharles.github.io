@@ -2447,6 +2447,12 @@
 		}
 
 		.image.round {
+			width: 15em;
+			overflow: hidden;
+			-ms-flex: 1;
+		}
+
+		.image.round2 {
 			width: 10em;
 			overflow: hidden;
 			-ms-flex: 1;
