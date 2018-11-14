@@ -2328,6 +2328,14 @@
 			text-align: left;
 		}
 
+		.box.special ul {
+			text-align: left;
+		}
+
+		.box.special .icons {
+			text-align: center;
+		}
+
 		.box .image.featured {
 			border-radius: 0;
 			display: block;

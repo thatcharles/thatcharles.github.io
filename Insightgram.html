@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Météore - Charles Chung</title>
+		<title>Insight-gram - Charles Chung</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -45,33 +45,42 @@
 			<!-- Main -->
 				<section id="main" class="container">
 					<header>
-						<h2>Météore</h2>
-						<p>Community makes a small action BIG</p>
+						<h2>Insight-gram</h2>
+						<p></p>
 					</header>
 					<div class="box">
-						<span class="image featured"><img src="images/Meteore.png" alt="" /></span>
+						<span class="image featured"><img src="images/InsightCover.png" alt="" /></span>
 						<h4>Project Background : Course Project</h4>
-						<h4>Project semester : 2016 Fall</h4>
-						<h4>Project duration : 2 months</h4>
-						<h4>Project course : Social Computing Application Design</h4>
-						<h4>Tools used: Python Django, Javascript, HTML, CSS</h4>
-						<h4>Audience : Prople who want ot promote and sustain their goals.</h4>
+						<h4>Project date : 2018.6</h4>
+						<h4>Project duration : 1 month</h4>
+						<h4>Project course : Data Science</h4>
+						<h4>Algorithm and tool used: TFIDF, Word2Vec, Sklearn, KMeans, CNN, Word Cloud</h4>
 						<h4>A group project</h4>
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
 								<h3>What's the issue</h3>
-								<p>We often give up to pursue our goals due to lots of reasons. One of the main reason is the lack of motivation to keep a habit. Moreover, when we wish to promote a goal to persuade others to join us, say preparing straws so that reduce the use of disposable straw, we often find it difficult since we couldn’t see who are supporting us and the result instantly. These are the two issues we try to solve in the project.</p>
+								<p>As a senior student, we noticed that as events such as the graduation ceremony approaches, we tend to see more posts relative to the event on the social media. Also, the emotion of such posts are obvious. Not only do events such as the graduation ceremony have this tendency, but we can find similar phenomenon around mid-term exam period, sports seasons and more.</p>
+
+								<p>At the same time a new student, say a exchange student, may find it difficult to engage to the local community due to the lack of knowledge about what's going around.</p>
+
+								<p>What if we could visualize the hot topics that the univsrsity community cares about along with their emotion form the posts on social media and provide them to the newcomers? We believe it would helps them fit in the community with less effort.</p>
 							</div>
 							<div class="row-6 row-12-mobilep">
 								<h3>How we address the issue</h3>
-								<p>We design a social platform that everyone owns a planet in the galaxy. Users generated their individual or public goals and share them to the community. The goals would be represented as comets in the galaxy, everyone can cheer for other's individual goals and may join other's public goals. Our idea is that you can decorate your planet by the reward of joining and achieving goals. The detail design is shown below.</p>
+								<p>We crawled and extracted keywords from posts with location tags on Instagram, since trends on instagram satifies the endemic and transient characteristics. We then cluster posts with similar keywords together. At the same time, we utilize CNN to predict the emotion of the photos. After the analysis, we used word cloud to visualize our findings.</p>
 							</div>
 						</div>
-						<span class="image featured"><img src="images/MeteoreInteraction.png" alt="" /></span>
+						<span class="image featured"><img src="images/insightgramMap.png" alt="" /></span>
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
+								<h3>What we find</h3>
+								<p><img class="image left round" src="images/emotionC.png" alt=""/>The text analysis results shows that schools in proximity tend to have common interests. By extracting keywords and cluster the posts containing similar kewords together, we successfully extracts reignal hot topics.</p>
+								<p>The image emotion classification shows that our model tends to classify dim pictures as negative in emotion, while some of them are actually joyful pictures taken in the night. This is the part we should put further efforts on.</p>
+								<p>The mechanism can be further developed to help people new to the place fit in the community easier.
+							</div>
+							<div class="row-6 row-12-mobilep">
 								<h3>What's my role in the project</h3>
-								<p>Me and my team descuss and design the project together, I'm particularly in charge of the implementation of the back-end of the website. I used Django(a tool developed for python) to manage the views, urls and database of the website.</p>
+								<p>I was mainly in charge of the data analysis of this work. From word embedding and clustering for text analysis to using Keras to implement CNN for photo emotion classification, I processed data crawled by my teammate and output findings to another teammate, she then vistualized and presented them. We also discussed every challenges we met together.</p>
 							</div>
 						</div>
 					</div>
