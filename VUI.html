@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Charles Bot - Charles Chung</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Charles Chung</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Layouts</a>
+								<ul>
+									<li><a href="generic.html">Generic</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="elements.html">Elements</a></li>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option One</a></li>
+											<li><a href="#">Option Two</a></li>
+											<li><a href="#">Option Three</a></li>
+											<li><a href="#">Option Four</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Charles Bot</h2>
+						<p>A Hands-Free, Eyes-Free Voice User Interface on Android devices</p>
+					</header>
+					<div class="box">
+						<span class="image featured"><img src="images/VUIFront.png" alt="" /></span>
+						<h4>Project Background : Side Project</h4>
+						<h4>Project date : 2018.4 - 2018.6</h4>
+						<h4>Project duration : 2 months</h4>
+						<h4>An individual project</h4>
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>What's the issue</h3>
+								<p>People frequently use mobile phone and constantly need to stay in touch with others. With the existing method, sometimes they are unable to reply to a instant message (IM) right in time. For instance, when people is driving, cooking, or walking in a hurry, they may find it difficult to take out their phone or even switch visual attention toward the phone screen. A more natural method to receive and response to IM is needed in this situation.</p>
+							</div>
+							<div class="row-6 row-12-mobilep">
+								<h3>How I address the issue</h3>
+								<p>A Vioce User Interface (VUI) could be a suitable solution. While existing products provide either a read out loud service for incoming notification or a speech to text text composing function, there isn't a service which combines the receiving, navigating and responding proceduals altogether to provide user a Hands-Free, Eyes-Free interaction to the mobile phone.</p>
+								<p>In order to make a prototype out of this idea, I utilized NotificationListenerService on Android to listen the notification sent to the phone. Then, a TextToSpeech library is called to read the imcoming message out loud to the user. At the same time, the PendingIntent and RemoteInputs of the imcoming notification are collected. These are the elements needed to reply for the incoming message later. The next step is to prompt the speech input. I implemented a RecognizerIntent to receive speech result. The result then be added to the RemoteInput, and sent to the message sender via PendingIntent, thus finished the procedual.</p>
+								<p>The flow of the app is presented below.</p>
+							</div>
+						</div>
+						<span class="image featured"><img src="images/VUIImage.png" alt="" /></span>
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>What I learned</h3>
+								<p>Form this project, I gained more programming skill for Android development, especially I learned how to utilize Service to have an app run in background. Moreover, I gained a more mature understanding of how each functions in the Andriod communicate with each other. This experience helped me to become a more solid programmer and developer.</p>
+								<p>Furthermore, the process of developing this idea and discussing with prof. Stanley helped a lot to improve my ability to define and state the research question clearly. This is a valuable training experience for me.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
