@@ -51,21 +51,20 @@
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
 								<h3>What's the issue</h3>
-								<p>People frequently use mobile phone and constantly need to stay in touch with others. With the existing method, sometimes they are unable to reply to an instant message (IM) right in time. For instance, when people are driving, cooking, or walking in a hurry, they may find it difficult to take out their phone or even switch visual attention toward the phone screen. A more natural method to receive and respond to IM is needed in this situation.</p>
+								<p>People frequently use mobile phone and constantly need to stay in touch with others. With the existing method, sometimes they are unable to reply to an instant messaging (IM) right in time. For instance, when people are driving, cooking, or walking in a hurry, they may find it difficult to take out their phone or even switch visual attention toward the phone screen. A more natural method to receive and respond to IM is needed in this situation.</p>
 							</div>
 							<div class="row-6 row-12-mobilep">
 								<h3>How I address the issue</h3>
-								<p>A Voice User Interface (VUI) could be a suitable solution. While existing products provide either a read out loud service for incoming notification or a speech to text text composing function, there isn't a service which combines the receiving, navigating and responding procedurals altogether to provide the user a Hands-Free, Eyes-Free interaction to the mobile phone.</p>
-								<p>In order to make a prototype out of this idea, I utilized NotificationListenerService on Android to listen to the notification sent to the phone. Then, a TextToSpeech library is called to read the incoming message out loud to the user. At the same time, the PendingIntent and RemoteInputs of the incoming notification are collected. These are the elements needed to reply for the incoming message later. The next step is to prompt the speech input. I implemented a RecognizerIntent to receive speech result. The result then is added to the RemoteInput and sent to the message sender via PendingIntent, thus finished the procedure.</p>
-								<p>The flow of the app is presented below.</p>
+								<p>A Voice User Interface (VUI) could be a suitable solution. While existing products provide either a read out loud service for an incoming notification or a speech to text text composing function, there isn't a service which combines the receiving and responding procedurals altogether to provide the user a Hands-Free, Eyes-Free interaction to the mobile phone.</p>
+								<p>In order to make a prototype out of this idea, I utilize <b>NotificationListenerService</b> on Android to listen to the notification sent to the phone. Then, a <b>TextToSpeech</b> library is called to read the incoming message out loud to the user. At the same time, the <b>PendingIntent</b> and <b>RemoteInputs</b> of the incoming notification are collected. These are the elements needed to construct the reply message later. The next step is to prompt the speech input. I implement a <b>RecognizerIntent</b> to receive speech result and transfer the audio into texts. The result then is added to the <b>RemoteInputs</b> and sent to the message sender via the <b>PendingIntent</b>, now that the text response is sent and so the procedure finishes.</p>
 							</div>
 						</div>
 						<span class="image featured"><img src="images/VUIImage.png" alt="" /></span>
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
-								<h3>What I learned</h3>
-								<p>Form this project, I gained more programming skill for Android development, especially I learned how to utilize Service to have an app run in the background. Moreover, I gained a more mature understanding of how each function in the Andriod communicates with each other. This experience helped me to become a more solid programmer and developer.</p>
-								<p>Furthermore, the process of developing this idea and discussing with prof. Stanley helped a lot to improve my ability to define and state the research question clearly. This is a valuable training experience for me.</p>
+								<h3>What I learn from this</h3>
+								<p>Form this project, I gained more programming skill for Android development. Especially, I learned how to utilize Service to have an app run in the background. Moreover, I gained a more mature understanding of how each function in the Android engine communicates with each other. This experience helped me to become a more solid programmer and developer.</p>
+								<p>Furthermore, the process of developing this idea and discussing with prof. Stanley helped me a lot to improve my ability to define and state the research question clearly. This is a valuable training experience for me.</p>
 							</div>
 						</div>
 					</div>
@@ -79,7 +78,7 @@
 						<li><a href="mailto: that_charles@gapp.nthu.edu.tw" class="icon fa-envelope "><span class="label">Gmail</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>, <a href="#">Charles Chung</a></li>
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>, <a href="#">Charles Chung</a></li><div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 					</ul>
 				</footer>
 

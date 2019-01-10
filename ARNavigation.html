@@ -51,23 +51,26 @@
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
 								<h3>What's the issue</h3>
-								<p>In the observation of the most widely used digital mapping navigation system -- Google map, we found users sometimes find it hard to judge their location, face direction and thus unable to recognize the suggested route correctly. This issue is especially critical when navigating through complex intersections in Asain cities like the one I live in.</p>
+								<p>Navigation provided by mobile apps is one of the most widely used means for people looking for path suggestions when discovering unfamiliar places.</p>
+								<p>However, in our observation of the most widely used digital mapping and navigation system — the Google Maps, we noticed that users sometimes find it hard to judge their location and face direction, thus unable to recognize the suggested path correctly. Google Maps fails to give understandable path suggestions especially when navigating through wandering, narrow, and often closely angled routes in Asian cities such as the one I live in.</p>
 							</div>
 							<div class="row-6 row-12-mobilep">
 								<h3>How we address the issue</h3>
-								<p>We enhanced location-based AR technology to project trail suggestion onto the sidewalk through user’s mobile camera while navigating. To be specific, We utilize Google Map API to get the suggested route and the corresponding polyline of the route. We exploited an algorithm combining gyro sensor data, GPS data and data from Google ARCore to determine user's location, face direction, and movements. The corresponding route suggestion then is projected through the mobile camera of the user.</p>
-								<p>This research is currently under user study. We expect this function to enhance the mapping between navigational suggestion and the real world situation, therefore augments the pedestrian navigation task and the user experience.</p>
-								<p>This work is scheduled to submit to Ubicomp 2019.</p>
+								<p>We utilize Google Map API to get the suggested path and the corresponding polyline of the path. We exploited an algorithm which combines gyro sensor data, GPS data and data collected from Google ARCore package to determine user's location, face direction, and current moving direction. Our Unity background engine then adjusts the projection angle and offsets the polyline from the middle of the road to user’s actual location (often by the sidewalk). The corresponding path suggestion then is projected through the mobile camera of the user. Our system is designed to augment the Google Maps navigation.</p>
 							</div>
 						</div>
 						<span class="image featured"><img src="images/ARNavigationConcept.png" alt="" /></span>
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
+								<h3>How good is it</h3>
+								<p>Currently, we are conducting user study of this location-based Augmented Reality (AR) technology. We have found two challenging routes in the city of Hsinchu, Taiwan, and we are implementing a within-subject study to understand the <b>usability</b> and the <b>User Burden</b> (Hyewon Suh, 2016) of using the Google Maps plus our system compares to solely using the Google Maps.
+								</p>
+								<p>With the <b>post-trial self-rating</b>, <b>performance measures</b>, and <b>video/audio recorded</b> for qualitative data analysis, we are hoping not only to examine the usability of our functions, but also provide insights to the design of AR pedestrian navigation.</p>
+							</div>
+							<div class="row-6 row-12-mobilep">
 								<h3>What's my role in the project</h3>
-								<p>I am in charge of both the user study and the implementation of this research.</p>
-								<p>I am the leader of the user study phase. We intend to use Observer-rating, Performance measures and some Post-trial self-rating questionnaires combining our customized question of the mapping accuracy, NASA Task Load Index (NASA-TLX) and User Burden Scale to evaluate our hypothesis.</p>
-								<p>For the implementation, I tweaked our Unity app to enhance its reliability and to fit it into our experimental environment.</p>
-								<p>This research is a perfect practice of my ability to lead the design and conduct of a user study. It provides me a chance to meet the Unity platform as well.</p>
+								<p>I am the leader of the user study phase. Also I co-developed the research app, tweaking the app to enhance its reliability and made it fit into our experimental environment.</p>
+								<p>This research is a perfect practice of my ability to lead the design and conduct of a user study. It provides me a chance to learn how to develop apps on the Unity platform as well.</p>
 							</div>
 						</div>
 					</div>
@@ -81,7 +84,7 @@
 						<li><a href="mailto: that_charles@gapp.nthu.edu.tw" class="icon fa-envelope "><span class="label">Gmail</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>, <a href="#">Charles Chung</a></li>
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>, <a href="#">Charles Chung</a></li><div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 					</ul>
 				</footer>
 
