@@ -2478,7 +2478,7 @@
 		}
 
 		.image.round3 {
-			height: 10em;
+			width: 10em;
 			overflow: hidden;
 			-ms-flex: 1;
 		}
