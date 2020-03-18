@@ -2321,7 +2321,7 @@
 				}
 
 		.box.special {
-			text-align: center;
+			text-align: left;
 		}
 
 		.box.special p {
@@ -2466,13 +2466,19 @@
 		}
 
 		.image.round {
-			width: 15em;
+			width: 8em;
 			overflow: hidden;
 			-ms-flex: 1;
 		}
 
 		.image.round2 {
-			width: 10em;
+			width: 5em;
+			overflow: hidden;
+			-ms-flex: 1;
+		}
+
+		.image.round3 {
+			height: 10em;
 			overflow: hidden;
 			-ms-flex: 1;
 		}
