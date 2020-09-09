@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mapmory - Charles Chung</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Charles Chung</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Projects</a>
+								<ul>
+									<li><a href="ARNavigation.html">AR Navigation</a></li>
+									<li><a href="WhoMatters.html">Who Matters</a></li>
+									<li><a href="VUI.html">Charles Bot</a></li>
+									<li><a href="HopeEnglish.html">Usability Evaluation</a></li>
+									<li><a href="KE.html">Knowledge Explorer</a></li>
+									<li><a href="Meteore.html">Météore</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="button">繁體中文</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Mapmory</h2>
+						<p>A Data Visualization and Machine Learning Porject</p>
+					</header>
+					<div class="box">
+						<span class="image featured"><img src="images/InsightCover.png" alt="" /></span>
+						<h4>Project Background : Course Project</h4>
+						<h4>Project date : 2018.6</h4>
+						<h4>Project duration : 1 month</h4>
+						<h4>Project course : Data Science</h4>
+						<h4>Algorithm and tool used: TFIDF, Word2Vec, Sklearn, KMeans, CNN, Word Cloud</h4>
+						<h4>A group project</h4>
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>What's the issue</h3>
+								<p>As a senior student, we noticed that as events such as the graduation ceremony approach, we tend to see more posts relative to the event on social media. Also, the emotion of such posts is obvious. Not only do events such as the graduation ceremony have this tendency, but we can find a similar phenomenon around mid-term exam period, sports seasons and more.</p>
+
+								<p>At the same time a new student, say an exchange student, may find it difficult to engage in the local community due to the lack of knowledge about what's going around.</p>
+
+								<p>What if we could visualize the hot topics that the university community cares about along with their emotion form the posts on social media and provide them to the newcomers? We believe it would help them fit in the community with less effort.</p>
+							</div>
+							<div class="row-6 row-12-mobilep">
+								<h3>How we address the issue</h3>
+								<p>We crawled and extracted keywords from posts with location tags on Instagram since trends on Instagram satisfies the endemic and transient characteristics. We then cluster posts with similar keywords together. At the same time, we utilize CNN to predict the emotion of the photos. After the analysis, we used word clouds to visualize our findings.</p>
+							</div>
+						</div>
+						<span class="image featured"><img src="images/insightgrammap.jpg" alt="" /></span>
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>What we find</h3>
+								<p><img class="image left round" src="images/emotionC.png" alt=""/>The text analysis results show that schools in proximity tend to have common interests. By extracting keywords and cluster the posts containing similar keywords together, we successfully extract regional hot topics.</p>
+								<p>The image emotion classification shows that our model tends to classify dim pictures as negative in emotion, while some of them are actually joyful pictures taken in the night. This is the part we should put further efforts on.</p>
+								<p>The mechanism can be further developed to help people new to the place fit in the community easier.
+							</div>
+							<div class="row-6 row-12-mobilep">
+								<h3>What's my role in the project</h3>
+								<p>I was mainly in charge of the data analysis of this work. From word embedding and clustering for text analysis to using Keras to implement CNN for photo emotion classification, I processed data crawled by my teammate and output findings to another teammate, she then visualized and presented them. We also discussed every challenge we met together.</p>
+							</div>
+						</div>
+                    </div>
+                    <div class="box">
+                        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+                        <div id="player"></div>
+
+                        <script>
+                        // 2. This code loads the IFrame Player API code asynchronously.
+                        var tag = document.createElement('script');
+                    
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    
+                        // 3. This function creates an <iframe> (and YouTube player)
+                        //    after the API code downloads.
+                        var player;
+                        function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('player', {
+                            height: '390',
+                            width: '640',
+                            videoId: 'MKI10Q6izyE',
+                            events: {
+                                'onReady': onPlayerReady,
+                                'onStateChange': onPlayerStateChange
+                            }
+                            });
+                        }
+                    
+                        // 4. The API will call this function when the video player is ready.
+                        function onPlayerReady(event) {
+                            event.target.playVideo();
+                        }
+                    
+                        // 5. The API calls this function when the player's state changes.
+                        //    The function indicates that when playing a video (state=1),
+                        //    the player should play for six seconds and then stop.
+                        var done = false;
+                        function onPlayerStateChange(event) {
+                            if (event.data == YT.PlayerState.PLAYING && !done) {
+                                done = true;
+                            }
+                        }
+                        function stopVideo() {
+                            player.stopVideo();
+                        }
+                        </script>
+                    </div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/%E7%A5%90%E9%9C%96-%E9%8D%BE-5bb7b6164/?locale=en_US" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/thatcharles" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto: that_charles@gapp.nthu.edu.tw" class="icon fa-envelope "><span class="label">Gmail</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>, <a href="#">Charles Chung</a></li><div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
